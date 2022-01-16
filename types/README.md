@@ -28,7 +28,7 @@ await prismicClient.getByType<PrismicDocument<BlogPost>>("blog_post")
 ```
 
 ## GETTING STARTED
-1. Install the package `npm i prismic-type-gen` or `yarn add prismic-type-gen`
+1. Globally install the package `npm i prismic-type-gen -g` or `yarn global add prismic-type-gen`
 
 2. Add the file `prismicTypeGen.config.json` to the root of your project
 ```
@@ -36,7 +36,7 @@ await prismicClient.getByType<PrismicDocument<BlogPost>>("blog_post")
 
 {
   "repo": "my-cool-repo",
-  "token": "...", Found in prismic dashboard - API & Security
+  "token": "ey...", Found in prismic dashboard - API & Security
   "outPutPath": "../types/prismic.ts" // optional - defaults to prismicTypes.ts
 }
 ```
@@ -45,8 +45,8 @@ await prismicClient.getByType<PrismicDocument<BlogPost>>("blog_post")
 
 ### Worth mentioning
 
-Everything is optional - https://prismic.io/blog/required-fields
-RelationalFields can only have a subset of fields types - https://prismic.io/docs/technologies/fetch-linked-document-fields-rest-api
+- Everything is optional - https://prismic.io/blog/required-fields
+- RelationalFields can only have a subset of fields types - https://prismic.io/docs/technologies/fetch-linked-document-fields-rest-api
 
 
 ### TODO
