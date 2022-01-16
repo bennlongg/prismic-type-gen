@@ -1,0 +1,33 @@
+{
+  "name": "prismic-type-gen",
+  "version": "0.0.1",
+  "description": "",
+  "bin": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node ./dist/index.js",
+    "gen": "ts-node ./src/apiClientGenerator.ts",
+    "build-cjs": "tsc --pretty --extendedDiagnostics -p src/tsconfig-cjs.json -d",
+    "build-esm": "tsc --pretty --extendedDiagnostics -p src/tsconfig-esm.json -d",
+    "build-ts": "npm run build-cjs && npm run build-esm"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "case": "^1.6.3",
+    "node-fetch": "^2.6.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.*",
+    "@prismicio/types": "^0.1.21"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.4",
+    "ts-node": "^10.4.0"
+  }
+}

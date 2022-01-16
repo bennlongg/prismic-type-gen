@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ES2015",
+    "strict": true,
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": false,
+    "noLib": false,
+    "preserveConstEnums": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "../dist",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "lib": ["es2016", "dom"],
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "stories", "**/*.stories.*"]
+}
