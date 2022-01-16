@@ -1,8 +1,10 @@
 {
   "name": "prismic-type-gen",
   "version": "0.0.1",
-  "description": "",
-  "bin": "./dist/index.js",
+  "description": "Type generator for prismics rest api",
+  "bin": {
+    "prismic-type-gen": "dist/index.js"
+  },
   "main": "./dist/index.js",
   "module": "./dist/esm/index.js",
   "typings": "./dist/index.d.ts",
@@ -17,7 +19,7 @@
     "build-esm": "tsc --pretty --extendedDiagnostics -p src/tsconfig-esm.json -d",
     "build-ts": "npm run build-cjs && npm run build-esm"
   },
-  "author": "",
+  "author": "Ben Long",
   "license": "ISC",
   "dependencies": {
     "case": "^1.6.3",
@@ -29,5 +31,13 @@
   "devDependencies": {
     "@types/node": "^17.0.4",
     "ts-node": "^10.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennlongg/prismic-type-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bennlongg/prismic-type-gen/issues"
+  },
+  "homepage": "https://github.com/bennlongg/prismic-type-gen#readme"
 }
