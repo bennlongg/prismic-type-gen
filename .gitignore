@@ -6,3 +6,4 @@ prismicTypeGen.config.ts
 apiClient
 playground
 node_modules
+prismicTypes.ts

@@ -31,12 +31,13 @@ export const createType = (
 
 export const createProperty = (
   name: string,
-  type: TypeNode
+  type: TypeNode,
+  mandatory?: boolean
 ): PropertySignature => {
   return factory.createPropertySignature(
     undefined,
     factory.createIdentifier(name),
-    factory.createToken(SyntaxKind.QuestionToken),
+    mandatory ? undefined : factory.createToken(SyntaxKind.QuestionToken),
     type
   );
 };

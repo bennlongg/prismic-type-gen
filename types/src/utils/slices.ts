@@ -33,6 +33,11 @@ export const createSliceType = (
 
   return createType(createTypeName(name + "Slice"), [
     createProperty(
+      "slice_type",
+      factory.createLiteralTypeNode(factory.createStringLiteral(name)),
+      true
+    ),
+    createProperty(
       "primary",
       factory.createTypeLiteralNode(nonRepeatProperties)
     ),
