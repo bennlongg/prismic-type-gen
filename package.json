@@ -1,6 +1,6 @@
 {
   "name": "prismic-type-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./types/dist/index.js",
   "module": "./types/dist/esm/index.js",
