@@ -37,7 +37,7 @@ await prismicClient.getByType<PrismicDocument<BlogPost>>("blog_post")
 {
   "repo": "my-cool-repo",
   "token": "ey...", Found in prismic dashboard - API & Security
-  "outPutPath": "../types/prismic.ts" // optional - defaults to prismicTypes.ts
+  "outputPath": "../types/prismic.ts" // optional - defaults to prismicTypes.ts
 }
 ```
 3. Run `prismic-type-gen`
